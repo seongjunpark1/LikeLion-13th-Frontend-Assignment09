@@ -2,7 +2,6 @@ import { Route, Routes, Outlet } from "react-router-dom";
 import PostList from "../pages/PostList";
 import PostDetail from "../pages/PostDetail";
 import PostWrite from "../pages/PostWrite";
-import PostEdit from "../pages/PostEdit";
 import * as S from "../styles/Layout";
 
 function Layout() {
@@ -25,7 +24,6 @@ export default function Router() {
                 <Route path="/" element={<PostList />} />
                 <Route path="/posts/:id" element={<PostDetail />} />
                 <Route path="/write" element={<PostWrite />} />
-                <Route path="/edit/:id" element={<PostEdit />} />
             </Route>
         </Routes>
     );
